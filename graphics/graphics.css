@@ -14,7 +14,6 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    overflow-y: hidden;
 }
 .header {
     text-align: center;
@@ -29,10 +28,13 @@ body {
     margin-left: 2%;
 }
 
-#c1 {
+#c1, #c2, #c3, #c4 {
     width: 400px;
     height: 200px;
     border: 3px solid rgba(44, 5, 56, 0.3);
     margin: 40px;
-
+}
+.can {
+    display: flex;
+    justify-content: space-between;
 }

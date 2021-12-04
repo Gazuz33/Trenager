@@ -25,7 +25,7 @@
 <section class="registration">
     <div class="container">
         <div class="second-block">
-            <form action="exam.html" method="get">
+            <form id="form" action="exam.html" method="get">
                 <div class="second-block__row">
                     <table>
                         <tr class="sec_row">
@@ -40,11 +40,11 @@
                     <label class="label" >Тип физической нагрузки</label>
                     <select class="type" id="type" >
                         <option >Тип упражнения</option>
-                        <option >Бег</option>
-                        <option >Ходьба</option>
-                        <option >Велосипед</option>
-                        <option >Силовые упражнения </option>
-                        <option >Плавание </option>
+                        <option value="Running">Бег</option>
+                        <option value="Walking">Ходьба</option>
+                        <option value="Cycling">Велосипед</option>
+                        <option value="Strength exercises">Силовые упражнения </option>
+                        <option value="Swimming">Плавание </option>
                     </select>
                     <div class="second-block__row">
                         <label class="label">Измеряемые показатели </label>
@@ -64,7 +64,7 @@
                             <input type="checkbox" id="oxy">
                             <label for="oxy">Измерение сатурации крови</label>
                         </div>
-                    <button class="button " type="submit" value="click">
+                    <button class="ex" formaction="exam.html" >
                         Зарегистрировать обследование
                     </button>
                     </div>

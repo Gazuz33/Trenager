@@ -22,11 +22,22 @@
 <div class="left">
     <a href="../doctor/newexam.html"><img src="../pics/left2.png" alt="left"></a>
 </div>
-<div class="patient">
-    <label> Пациент</label>
-</div>
+<div class="sticker">
+<table>
+    <caption>Информация об обследовании </caption>
+    <tr id="row">
+        <td>Дата обследования</td>
+        <td>Тип физической нагрузки</td>
+    </tr>
+    <tr>
+        <td id="date"></td>
+        <td id="type"></td>
+    </tr>
+</table>
 <a href="../sensors/sensors.html"><button class="button " type="submit" value="click">
     Активизировать сеанс обследования
 </button></a>
+</div>
+<script src="exam.js"></script>
 </body>
 </html>

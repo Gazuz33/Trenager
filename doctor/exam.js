@@ -11,11 +11,8 @@ function getParams(){
     return params
 }
 params = getParams()
-name = unescape(params["name"])
-sec_name = unescape(params["sec_name"])
-age = unescape(params["age"])
-sex = unescape(params["sex"])
-document.getElementById("name").innerHTML = name
-document.getElementById("sec_name").innerHTML = sec_name
-document.getElementById("age").innerHTML = age
-document.getElementById("sex").innerHTML = sex
+date = unescape(params["date"])
+type = unescape(params["type"])
+
+document.getElementById("date").innerHTML = date
+document.getElementById("type").innerHTML = type
