@@ -21,7 +21,7 @@ body {
     text-align: center;
     width: 100%;
 }
-.header-title {
+.header-title{
     line-height: 60px;
     font-weight: 300;
     color: #fff;
@@ -32,25 +32,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: space-between;
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
 .btn-container {
     display: flex;
-    justify-content: space-between;
+   
     width: 400px;
     height: 40px;
     margin: 0 auto;
 }
 .btn {
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 60px;
     padding: 0 10px;
     background-color: #454c53;
     border: 0;
-    border-radius: 2px;
+    border-radius: 8px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -68,8 +67,30 @@ body {
     width: 100%;
 }
 .foot_text {
+    font-weight: 500;
+    align-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(79, 255, 221, 0.77);
+}
+.admin {
+    margin-left: -250px;
+    transition: all 1s;
+    opacity: 0.6;
+}
+.doctor {
+    margin-left: 100px;
+    transition: all 1s;
+    opacity: 0.6;
+}
+span {
     line-height: 20px;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
-    color: rgba(79, 255, 221, 0.77);
+    color:rgb(255, 255, 255);
+    margin-left: 180px;
+}
+
+.doctor:hover, .admin:hover { 
+    transform: scale(1.15);
+    opacity: 1;
 }

@@ -103,6 +103,7 @@ label {
     background: #05786E;
     box-shadow: 0px 4px 30px rgba(0, 53, 48, 0.3);
     cursor: pointer;
+    transform: rotateZ(-.5deg);
 }
 
 .registration {

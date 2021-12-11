@@ -29,7 +29,7 @@ var myLineChart = new Chart(ctx, {
          delay: (context) => {
            let delay = 0;
            if (context.type === 'data' && context.mode === 'default' && !delayed) {
-             delay = context.dataIndex * 700;
+             delay = context.dataIndex * 1200;
            }
            return delay;
          },
