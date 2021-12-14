@@ -35,3 +35,8 @@
 **Use case диаграмма проекта**
 ![use case](documentation/usecase.png)
 
+**Activity диаграммы проекта**
+
+![act1](documentation/admin_list.png)
+![act2](documentation/admin_reg.png)
+![act3](documentation/Doctor.png)
