@@ -1,21 +1,31 @@
-function getParams(){
-    var idx = document.URL.indexOf('?')
-    var params = new Array()
-    if (idx != -1) {
-        var pairs = document.URL.substring(idx+1, document.URL.length).split('&')
-        for (var i=0; i<pairs.length; i++){
-            nameVal = pairs[i].split('=')
-            params[nameVal[0]] = nameVal[1]
-        }
-    }
-    return params
+let A = JSON.parse(localStorage.getItem("data"));
+console.log(A);
+let Name = document.getElementById("name");
+let Surname = document.getElementById("sec_name");
+let Age = document.getElementById("age");
+let Sex = document.getElementById("sex");
+for (let i = 0; i < A.length; i++) {
+  let li = document.createElement("li");
+  li.textContent = A[i].name;
+  Name.appendChild(li);
 }
-params = getParams()
-name = unescape(params["name"])
-sec_name = unescape(params["sec_name"])
-age = unescape(params["age"])
-sex = unescape(params["sex"])
-document.getElementById("name").innerHTML = name
-document.getElementById("sec_name").innerHTML = sec_name
-document.getElementById("age").innerHTML = age
-document.getElementById("sex").innerHTML = sex
+for (let i = 0; i < A.length; i++) {
+  let li = document.createElement("li");
+  li.textContent = A[i].surname;
+  Surname.appendChild(li);
+}
+for (let i = 0; i < A.length; i++) {
+  let li = document.createElement("li");
+  li.textContent = A[i].age;
+  Age.appendChild(li);
+}
+for (let i = 0; i < A.length; i++) {
+  let li = document.createElement("li");
+  li.textContent = A[i].sex;
+  Sex.appendChild(li);
+}
+function clean () {
+let elem = document.getElementById('name')
+localStorage.clear()
+location.reload()
+}

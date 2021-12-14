@@ -29,8 +29,7 @@ body {
 .left {
     margin-left: 2%;
 }
-#fio {
-}
+
 .table1{
     margin-left: 50px;
 }
@@ -49,4 +48,31 @@ table {
 .sec_row {
     margin-top: 30px;
     color: white;
+}
+li {
+    list-style-type: none;
+}
+.but {
+  box-sizing: border-box;
+  background-color: #00a092;
+  width: 359px;
+  height: 74px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 500px;
+  margin-left: 250px;
+}
+
+.but:hover, .but:focus {
+  background: #05786e;
+  box-shadow: 0px 4px 30px rgba(0, 53, 48, 0.3);
+  cursor: pointer;
+  transform: rotateZ(-0.5deg);
 }
