@@ -131,7 +131,10 @@ label {
     font-size: 22px;
     color: rgba(0, 1, 68, 0.9);
 }
-table {
-    border-collapse: collapse;
-    width: 300px;
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+#name, #sec_name {
+    color: rgb(89, 0, 255);
 }

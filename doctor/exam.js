@@ -1,18 +1,26 @@
-function getParams(){
-    let idx = document.URL.indexOf('?')
-    let params = new Array()
-    if (idx != -1) {
-        let pairs = document.URL.substring(idx+1, document.URL.length).split('&')
-        for (let i=0; i<pairs.length; i++){
-            nameVal = pairs[i].split('=')
-            params[nameVal[0]] = nameVal[1]
-        }
-    }
-    return params
-}
-params = getParams()
-date = unescape(params["date"])
-type = unescape(params["type"])
+let data = JSON.parse(localStorage.getItem("data"));
 
-document.getElementById("date").innerHTML = date
-document.getElementById("type").innerHTML = type
+let length = data.length;
+let daata = document.getElementById("date");
+let Type = document.getElementById("type");
+
+daata.innerHTML = data.date
+Type.innerHTML = data.type
+
+let pulse = document.getElementById('pulse')
+let temp = document.getElementById('temp')
+let press = document.getElementById('press')
+let sat = document.getElementById('sat')
+
+if (data.pulse == "true") {
+    pulse.innerHTML = "Пульс"
+}
+if (data.temp == "true") {
+    temp.innerHTML = "Температура"
+}
+if (data.press == "true") {
+    press.innerHTML = "Кровяное давление"
+}
+if (data.sat == "true") {
+    sat.innerHTML = "Сатурация"
+}

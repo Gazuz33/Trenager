@@ -28,7 +28,7 @@ body {
 .left {
     margin-left: 2%;
 }
-#row, caption {
+#row, caption, #ind {
     text-decoration: none;
     color: rgba(0, 1, 68, 0.78);
     font-weight: 400;
@@ -39,12 +39,18 @@ body {
     padding-top: 50px;
     margin-left: 250px;
 }
+#ind { 
+    color: rgba(79, 3, 109, 0.78);
+}
 caption {
     padding-bottom: 50px;
 }
 td {
     padding-bottom: 50px;
-   padding-left: 150px;
+    padding-left: 150px;
+}
+li{
+    list-style-type: none;
 }
 
 .button {
