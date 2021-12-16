@@ -1,6 +1,5 @@
 let data = JSON.parse(localStorage.getItem("data"));
 
-let length = data.length;
 let daata = document.getElementById("date");
 let Type = document.getElementById("type");
 
