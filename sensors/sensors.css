@@ -10,6 +10,7 @@ html {
   background: #313940;
 }
 body {
+  
   min-height: 150vh;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;

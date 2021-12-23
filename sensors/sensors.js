@@ -46,6 +46,7 @@ oxy.ondragstart = drag;
 
 function drag (event) {
     event.dataTransfer.setData('id', event.target.id);
+    event.path[1].style = " ";
 }
 
 zone1_press.ondrop = drop;
@@ -57,21 +58,12 @@ zone2_temp.ondrop = drop;
 zone2_pulse.ondrop = drop;
 zone2_oxy.ondrop = drop;
 
+
 function drop (event) {
     let itemId = event.dataTransfer.getData('id');
     event.target.append(document.getElementById(itemId));
-    
-    if (itemId == "pulse") {
-        zone1_pulse.style = "background-color:rgba(0, 255, 34, 0.226)";
-    }
-    if (itemId == "temp") {
-        zone1_temp.style = "background-color:rgba(0, 255, 34, 0.226)";
-    }
-    if (itemId == "press") {
-        zone1_press.style = "background-color:rgba(0, 255, 34, 0.226)";
-    }
-    if (itemId == "oxy") {
-        zone1_oxy.style = "background-color:rgba(0, 255, 34, 0.226)";
+    if (event.srcElement.parentElement.className == "human") {
+        event.target.style = "background-color:rgba(0, 255, 34, 0.226)";
     }
 }
 
