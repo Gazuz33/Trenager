@@ -31,6 +31,8 @@
             <div class="second-block__row">
                 <label>Имя</label>
                 <input
+                required
+                minlength="3" maxlength="12"
                 class="input input_std"
                 id="username"
                 type="text"
@@ -41,6 +43,8 @@
               <div class="second-block__row">
               <label>Фамилия</label>
               <input
+                required
+                minlength="3" maxlength="12"
                 class="input input_std"
                 id="sec_name"
                 type="text"
@@ -51,6 +55,7 @@
             <div class="second-block__row">
               <label>Возраст</label>
               <input
+                min="1" max="99"
                 class="input input_std"
                 id="age"
                 type="number"

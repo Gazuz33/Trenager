@@ -21,22 +21,29 @@
       </h1>
     </header>
     <div class="left">
-      <a href="../authorization/index.html"
-        ><img src="../pics/left2.png" alt="left"
+      <a href="../authorization/index.html">
+        <img src="../pics/left2.png" alt="left" onclick="LocalClear();"
       /></a>
     </div>
     <section class="registration">
       <div class="container">
         <div class="second-block">
           <ul class="sec_row">
-            <li>Регистрация пациента </li>
-          <li id="name"></li>
-          <li id="sec_name"></li>
-        </ul>
+            <li>Регистрация пациента</li>
+            <li id="name"></li>
+            <li id="sec_name"></li>
+          </ul>
           <form id="form">
             <div class="second-block__row">
               <label>Дата обследования</label>
-              <input id="date" class="date" type="date" value="2021-12-01" >
+              <input
+                id="date"
+                class="date"
+                type="date"
+                value="2021-12-01"
+                min="2021-11-30"
+                max="2022-01-30"
+              />
             </div>
             <div class="second-block__row">
               <label class="label">Тип физической нагрузки</label>
@@ -55,20 +62,34 @@
                   <label for="pulse">Измерение пульса</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="temp" value="Измерение температуры" />
+                  <input
+                    type="checkbox"
+                    id="temp"
+                    value="Измерение температуры"
+                  />
                   <label for="temp">Измерение температуры</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="press" value="Измерение кровяного давления"/>
+                  <input
+                    type="checkbox"
+                    id="press"
+                    value="Измерение кровяного давления"
+                  />
                   <label for="press">Измерение кровяного давления</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="sat" value="Измерение сатурации крови" />
+                  <input
+                    type="checkbox"
+                    id="sat"
+                    value="Измерение сатурации крови"
+                  />
                   <label for="sat">Измерение сатурации крови</label>
                 </div>
-                <a href="exam.html"><button class="ex" type="submit">
-                  Зарегистрировать обследование
-                </button></a>
+                <a href="exam.html"
+                  ><button class="ex" type="submit">
+                    Зарегистрировать обследование
+                  </button></a
+                >
               </div>
             </div>
           </form>

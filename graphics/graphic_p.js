@@ -12,7 +12,7 @@ var myLineChart = new Chart(pulse, {
          data: [58,77,95,120,137,155,170],
       }]
    },
-   options: {
+    options: {
     radius: 4,
     hoverRadius: 8,
     responsive: true,

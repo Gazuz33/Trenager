@@ -65,7 +65,9 @@ function drop (event) {
     if (event.srcElement.parentElement.className == "human") {
         event.target.style = "background-color:rgba(0, 255, 34, 0.226)";
     }
+    console.log(event.srcElement.childNodes[0].id)
 }
+
 
 
 

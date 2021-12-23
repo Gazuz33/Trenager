@@ -41,4 +41,7 @@ mForm.addEventListener("submit", function (e) {
 document.querySelector(".ex").onclick = function() {
     document.location.href = "exam.html"
 }
+function LocalClear () {
+    localStorage.removeItem('data');
+    }
 
