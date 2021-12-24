@@ -8,11 +8,12 @@ const  zone2_press = document.querySelector('.zone2_press');
 const  zone2_temp = document.querySelector('.zone2_temp');
 const  zone2_pulse = document.querySelector('.zone2_pulse');
 const  zone2_oxy = document.querySelector('.zone2_oxy');
+let human = document.querySelector('.human');
 
 const  press = document.querySelector('#press');
 const  temp = document.querySelector('#temp');
 const  pulse = document.querySelector('#pulse');
-const  oxy = document.querySelector('#oxy');
+const  sat = document.querySelector('#sat');
 
 if (data.pulse == "false"){
     pulse.style.display = 'none'
@@ -24,7 +25,7 @@ if (data.press == "false"){
     press.style.display = 'none'
 }
 if (data.sat == "false"){
-    oxy.style.display = 'none'
+    sat.style.display = 'none'
 }
 
 zone1_press.ondragover = allowDrop;
@@ -42,7 +43,7 @@ function allowDrop (event) {
 press.ondragstart = drag;
 temp.ondragstart = drag;
 pulse.ondragstart = drag;
-oxy.ondragstart = drag;
+sat.ondragstart = drag;
 
 function drag (event) {
     event.dataTransfer.setData('id', event.target.id);
@@ -65,8 +66,15 @@ function drop (event) {
     if (event.srcElement.parentElement.className == "human") {
         event.target.style = "background-color:rgba(0, 255, 34, 0.226)";
     }
-    console.log(event.srcElement.childNodes[0].id)
+    dataArr = [];
+    const arrayVal = JSON.parse(localStorage.getItem("data1")) || [];
+    for (let i = 0; i < 4; i++) {
+      dataArr.push(itemId[i]);
+    }
+    arrayVal.push(itemId);
+    localStorage.setItem("data1", JSON.stringify(arrayVal));
 }
+
 
 
 
