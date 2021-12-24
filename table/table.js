@@ -26,6 +26,6 @@ for (let i = 0; i < length; i++) {
   Sex.appendChild(li);
 }
 function clean () {
-localStorage.clear()
+localStorage.removeItem('data');
 location.reload()
 }
